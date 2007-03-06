@@ -1,0 +1,12 @@
+(
+    // Mono - architecture independent
+    {
+        Type = Architecture;
+        Identifier = mono;
+        Name = "Mono IDL";
+        Description = "Mono architecture - independent of any hardware";
+        ByteOrder = little;
+        ShowInUI = YES;
+//        SortNumber = 53;
+    },
+)

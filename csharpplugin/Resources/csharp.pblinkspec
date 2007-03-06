@@ -1,0 +1,38 @@
+/*
+	CSharp.pblinkspec - CSharp plugin
+
+	In the mono environment, the mcs or gmcs tool performs all compiling and linking.
+	Therefore this specification file does the job of both the pbcompspec and pblinkspec
+	files.
+
+	Based heavily on:
+	ada.pblinkspec - AdaPlugin
+	Copyright 2006 Damien Bobillot.
+	Distributed under the GPL licence.
+*/
+(
+	{
+		Identifier = com.mono.compilers.csharp.linker;
+		Class = MonoLinkerSpecificationCS;
+		Name = "CSharp Assembly Builder";
+		Description = "C# Assembly Builder";
+		Version = "V2";
+		Vendor = "Mono";
+		Languages = (csharp);
+		BinaryFormats = ( compiled.mono.executable, compiled.mono.library );
+		Architectures = (mono, i386, ppc);
+		ExecPath = "/usr/bin/gmcs";
+		InputFileTypes = ( sourcecode.csharp, compiled.mono.library);
+		Options =
+		(
+			{
+				//Set default context to be checked
+				Name = CS_DEBUG;
+				Type = bool;
+				DefaultValue = NO;
+				CommandLineArgs = { YES = ("-debug+"); NO = (); };
+				CommonOption = YES;
+			},
+		);
+	}
+)

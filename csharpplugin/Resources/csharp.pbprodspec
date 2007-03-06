@@ -1,0 +1,48 @@
+/*
+	Mono C# Product Specification
+	
+	This is typically a mono executable or mono library assembly
+	
+*/
+(
+	{
+		// Mono Executable Assembly (.exe)
+		Identifier = com.mono.product-type.executable;
+		Class = MonoProductSpecificationCS;
+		Name = "Mono Executable Builder";
+		Description = "Mono Executable Assembly Builder";
+		IconNamePrefix = "TargetExecutable";
+		DefaultTargetName = "Application";
+		SupportsZeroLink = NO;
+		Vendor = "Mono";
+		AllowedBuildPhaseTypes = ( Sources, Frameworks );
+		DefaultBuildProperties = {
+			ARCHS = (mono);
+			VALID_ARCHS = (mono, i386, ppc );
+			FULL_PRODUCT_NAME = "$(PRODUCT_NAME).exe";
+		};
+		PackageTypes = (
+			com.mono.package-type.executable  // default
+		);
+	},
+	{
+		// Mono Library Assembly (.dll)
+		Identifier = com.mono.product-type.library;
+		Class = MonoProductSpecificationCS;
+		Name = "Mono Library Builder";
+		Description = "Mono Library Assembly Builder";
+		IconNamePrefix = "TargetExecutable";
+		DefaultTargetName = "Application";
+		SupportsZeroLink = NO;
+		Vendor = "Mono";
+		AllowedBuildPhaseTypes = ( Sources, Frameworks );
+		DefaultBuildProperties = {
+			ARCHS = (mono);
+			VALID_ARCHS = (mono, i386, ppc );
+			FULL_PRODUCT_NAME = "$(PRODUCT_NAME).dll";
+		};
+		PackageTypes = (
+			com.mono.package-type.library
+		);
+	},
+)

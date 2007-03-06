@@ -1,0 +1,20 @@
+{
+    Class = Native;
+    ProductType = "com.mono.product-type.executable";
+    Description = "Target for building an application that uses the Mono .NET environment";
+    CustomBuildSettings = {
+		INSTALL_PATH = "$(HOME)/Applications";
+		PRODUCT_NAME = "«PRODUCTNAME».exe";
+		EXECUTABLE_EXTENSION = "exe";
+		TARGET_TYPE = "-target:exe";
+    };
+	BuildPhases = (
+		{
+			Class = Sources;
+		},
+		{
+			Class = Frameworks;
+		},
+	);
+}
+

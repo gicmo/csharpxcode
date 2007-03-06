@@ -1,0 +1,17 @@
+{
+    Class = Native;
+    ProductType = "com.mono.product-type.library";
+    Description = "Target for building a mono assembly that can be linked to other assemblies";
+    CustomBuildSettings = 
+	{
+        INSTALL_PATH = "$(HOME)/Applications";
+        PRODUCT_NAME = "«PRODUCTNAME».dll";
+		EXECUTABLE_EXTENSION = "dll";
+		TARGET_TYPE = "-target:library";
+	};
+	BuildPhases = 
+	(
+		{ Class = Sources; },
+		{ Class = Frameworks; },
+    );
+}

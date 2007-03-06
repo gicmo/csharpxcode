@@ -1,0 +1,242 @@
+/*
+	Mono C# Compiler Specification
+
+	Copyright (c) 2006 Susan Mackay
+	(but feel free to add to/change/fix anything that needs it!!!)
+
+	This compiler specification defines the characteristics of the Mono MCS and GMCS compilers.
+*/
+
+{
+	Type = Compiler;
+	Identifier = com.mono.compilers.csharp.gmcs;
+	Class = MonoCompilerSpecificationCS;
+	Name = "Mono gmcs Compiler";
+	Description = "Mono development projects gmcs compiler for C# code";
+	Version = "2.0";
+	Vendor = "Mono";
+	Languages = (csharp);
+	Architectures = ( mono, i386, ppc );
+	FileTypes = (sourcecode.csharp);
+	ExecPath = "/usr/bin/gmcs";
+	CommandOutputParser = MonoOutputParser;
+	SupportsZeroLink = NO;
+	SupportsPredictiveCompilation = NO;
+	Options = (
+			{
+				Name = OTHER_CSHARPFLAGS;
+				Type = stringlist;
+				DefaultValue = "";
+				CommandLineArgs = { "" = (); "<<otherwise>>" = ("${0}"); };
+				Category = Building;
+			},
+			{
+				// Adds the module to the generated assembly
+				Name = CS_ADDMODULE;
+				Type = stringlist;
+				DefaultValue = "";
+				CommandLineArgs = ( "--addmodule:${0}" );
+				Category = Building;
+				CommonOption = NO;
+			},
+			{
+				//Set default context to be checked
+				Name = CS_CHECKED;
+				Type = bool;
+				DefaultValue = YES;
+				CommandLineArgs = { YES = (); NO = ("-checked-"); };
+				Category = CodeGeneration;
+				CommonOption = NO;
+			},
+			{
+				// Sets the code page
+				Name = CS_CODEPAGE;
+				Type = enum;
+				AllowedValues = ("", "Latin1", "utf8", "reset");
+				DefaultValue = "";
+				CommandLineArgs = { "" = (); "<<otherwise>>" = ("-codepage:${0}"); };
+				Category = Language;
+				CommonOption = NO;
+			},
+			{
+				// Define symbols
+				Name = CS_DEFINE;
+				Type = stringlist;
+				DefautValue = "";
+				CommandLineArgs = ( "-define:${0}" );
+				Category = Language;
+				CommonOption = NO;
+			},
+			{
+				// Debug flag
+				Name = CS_DEBUG;
+				Type = bool;
+				DefaultValue = NO;
+				CommandLineArgs = { YES = ("-debug+"); NO = (); };
+				CommonOption = YES;
+				Category = CodeGeneration;
+			},
+			{
+				// Delay Signing
+				Name = CS_DELAYSIGNING;
+				Type = bool;
+				DefaultValue = NO;
+				CommandLineArgs = { YES = ("-delaysign+"); NO = (); };
+				Category = Building;
+				CommonOption = NO;
+			},
+			{
+				// Documentation Extraction to a file
+				Name = CS_DOC;
+				Type = string;
+				DefaultValue = "";
+				CommandLineArgs = { "" = (); "<<otherwise>>" = ( "-doc:${0}" ); };
+				Category = Building;
+				CommonOption = NO;
+			},
+			{
+				// KeyFile
+				Name = CS_KEYFILE;
+				Type = string;
+				DefaultValue = "";
+				CommandLineArgs = { "" = (); "<<otherwise>>" = ( "-keyfile:${0}" ); };
+				Category = Building;
+				CommonOption = NO;
+			},
+			{
+				// KeyContainer
+				Name = CS_KEYCONTAINER;
+				Type = string;
+				DefaultValue = "";
+				CommandLineArgs = { "" = (); "<<otherwise>>" = ( "-keycontainer:${0}" ); };
+				Category = Building;
+				CommonOption = NO;
+			},
+			{
+				// Language
+				Name = CS_LANGUAGE;
+				Type = enum;
+				AllowedValues = ( "", "Default", "ISO-1");
+				DefaultValue = "";
+				CommandLineArgs = { "" = (); "<<otherwise>>" = ("--langversion:${0}"); };
+				Category = Language;
+				CommonOption = NO;
+			},
+			{
+				// Library path list
+				Name = CS_LIBRARIES;
+				Type = stringlist;
+				DefaultValue = "";
+				CommandLineArgs = ( "-lib:${0}" );
+				Category = Building;
+				CommonOption = YES;
+			},
+			{
+				// Main Class
+				Name = CS_MAINCLASS;
+				Type = string;
+				DefaultValue = "";
+				CommandLineArgs = { "" = (); "<<otherwise>>" = ( "-main:${0}" ); };
+				Category = Building;
+				CommonOption = NO;
+			},
+			{
+				// NoConfig
+				Name = CS_NOCONFIG;
+				Type = bool;
+				DefaultValue = NO;
+				CommandLineArgs = { YES = ("-noconfig+"); NO = (); };
+				Category = Building;
+				CommonOption = NO;
+			},
+			{
+				// Ignore Specified Warings
+				Name = CS_NOWARNINGS;
+				Type = stringlist;
+				DefaultValue = "";
+				CommandLineArgs = ( "-nowarn:${0}" );
+				Category = Building;
+				CommonOption = NO;
+			},
+			{
+				// Optimisation
+				Name = CS_OPTIMISE;
+				Type = bool;
+				DefaultValue = YES;
+				CommandLineArgs = { YES = (); NO = ("-optimize-"); };
+				Category = CodeGeneration;
+				CommonOption = NO;
+			},
+			{
+				// pkg-config
+				Name = CS_PKGCONFIG;
+				Type = stringlist;
+				DefaultValue = "";
+				CommandLineArgs = ( "-pkg:${0}" );
+				Category = Building;
+				CommonOption = NO;
+			},
+			{
+				// Resource
+				Name = CS_RESOURCE;
+				Type = stringlist;
+				DefaultValue = "";
+				CommandLineArgs = ( "-resource:${0}" );
+				Category = Building;
+				CommonOption = YES;
+			},
+			{
+				Name = CS_LINKRESOURCE;
+				Type = stringlist;
+				DefaultValue = "";
+				CommandLineArgs = ( "-linkresource:${0}" );
+				CommonOption = NO;
+			},
+			{
+				// Reference the specified assembly
+				Name = CS_REFERENCEDASSEMBLIES;
+				Type = stringlist;
+				DefaultValue = "System;System.Data;System.Xml";
+				CommandLineArgs = ( "-reference:${0}" );
+				Category = Building;
+				CommonOption = YES;
+			},
+			{
+				// Allows unsafe code
+				Name = CS_UNSAFE;
+				Type = bool;
+				DefaultValue = NO;
+				CommandLineArgs = { NO = (); YES = ("-unsafe+"); };
+				Category = Language;
+				CommonOption = NO;
+			},
+			{
+				// Treat warnings as errors
+				Name = CS_WARNASERROR;
+				Type = bool;
+				DefaultValue = NO;
+				CommandLineArgs = { NO = (); YES = ( "-warnaserror+" ); };
+				Category = CodeGeneration;
+				CommonOption = NO;
+			},
+			{
+				// Warning Level
+				Name = CS_WARNINGLEVEL;
+				Type = enum;
+				AllowedValues = ( "0", "1", "2", "3", "4" );
+				DefaultValue = "2";
+				CommandLineArgs = { "2" = (); "<<otherwise>>" = ( "-warn:${0}" ); };
+				Category = CodeGeneration;
+				CommonOption = NO;
+			},
+			{
+				// Control .NET V1 or V2 usage
+				Name = CS_DOTNETVERSION;
+				Type = enum;
+				AllowedValues = ( "V1", "V2");
+				DefaultValue = "V2";
+				Category = Language;
+				CommonOption = YES;
+			},
+	);
+}

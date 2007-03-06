@@ -1,0 +1,18 @@
+/*
+	Mono Compiler build rules
+	
+	Based (havily) on:
+	ocaml.xcbuildrules - OCamlPlugin
+	Copyright 2005 Damien Bobillot.
+	Distributed under the GPL licence.
+*/
+(
+	{
+		// .NET V2 compatible compiler
+		// Note: The monoCompilerSpecificationCS.m doesn't actually use this
+		// It uses option values to select the V1/V2 compiler (mcs/gmcs)
+		Name = "Mono Source rule";
+		FileType = sourcecode.csharp;
+		CompilerSpec = com.mono.compilers.csharp.gmcs;
+	},
+)

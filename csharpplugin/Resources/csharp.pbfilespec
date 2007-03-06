@@ -1,0 +1,55 @@
+/**
+	CSharp source and executable file specs.
+*/
+(
+	{
+		// C-Sharp source code
+		Identifier = sourcecode.csharp;
+		BasedOn = sourcecode;
+		Name = "C# File";
+		Extensions = (cs, csharp);
+		MIMETypes = ("text/C#");
+		ComputerLanguage = csharp;
+		IsTextFile = YES;
+		IsSourceCode = YES;
+		AppliesToBuildRules = YES;
+		ChangesCauseDependencyGraphInvalidation = YES;
+	},
+	{
+		// Executable (.exe) file
+		Identifier = compiled.mono.executable;
+		BasedOn = compiled;
+		Name = "Mono Executable File";
+		Extensions = (exe);
+		TypeCodes = (APPL);
+		IsTextFile = NO;
+		IsSourceFile = NO;
+		IsExecutable = YES;
+		IsExecutableWithGUI = NO;
+		IsTransparent = NO;
+		IsApplication = NO;
+		IsBundle = NO;
+		ContainsNativeCode = NO;
+		AppliesToBuildRules = NO;
+		ComputerLanguage = csharp;
+	},
+	{
+		// Library/Assembly (.dll) file
+		Identifier = compiled.mono.library;
+		BasedOn = compiled;
+		Name = "Mono Library Assembly File";
+		Extensions = (dll);
+		TypeCodes = (APPL);
+		IsTextFile = NO;
+		IsSourceFile = NO;
+		IsExecutable = YES;
+		IsExecutableWithGUI = NO;
+		IsTransparent = NO;
+		IsApplication = NO;
+		IsBundle = NO;
+		ContainsNativeCode = NO;
+		AppliesToBuildRules = NO;
+		ComputerLanguage = csharp;
+		ChangesCauseDependencyGraphInvalidation = YES;
+	}
+)

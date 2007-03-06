@@ -1,0 +1,134 @@
+/**
+   chsarp.pblangspec - CSharp language specification.
+*/
+
+(
+    {
+        Identifier = csharp;
+        Name = "CSharp";
+        Description = "CSharp source file";
+        BasedOn = "pbx_root_language";
+        SourceScannerClassName = PBXCPPSourceScanner;
+        SupportsIndentation = YES;
+        Indentation = {
+        };
+        SyntaxColoring = {
+            CaseSensitive = YES;
+			UnicodeSymbols = YES;
+			UnicodeEscapes = YES;
+            IndexedSymbols = YES;
+            CommentsCanBeNested = YES;
+            IdentifierStartChars = "_";
+            IdentifierChars = "_";
+            MultiLineComment = (
+                ( "/*", "*/" )
+            );
+            String = (
+                ( "\"", "\"" )
+            );
+            EscapeCharacter = "\\";
+            Character = (
+                ( "'", "'" )
+            );
+            SingleLineComment = (  "//" );
+            DocComment = "///";
+            DocCommentKeywords = (
+				"summary",
+				"param",
+				"returns"
+			);
+            Keywords = (
+				"abstract",
+				"as",
+				"base",
+				"bool",
+                "break",
+				"byte",
+                "case",
+				"catch",
+				"char",
+				"checked",
+				"class",
+                "const",
+                "continue",
+				"decimal",
+                "default",
+				"delegate",
+                "do",
+				"double",
+                "else",
+                "enum",
+				"event",
+				"explicit",
+				"extern",
+				"false",
+				"finally",
+				"fixed",
+				"float",
+				"for",
+				"foreach",
+				"get",
+				"goto",
+				"if",
+				"implicit",
+				"in",
+				"int",
+				"interface",
+				"internal",
+				"is",
+				"lock",
+				"long",
+				"namespace",
+				"new",
+				"null",
+				"object",
+				"operator",
+				"out",
+				"override",
+				"params",
+				"private", 
+				"protected",
+				"public",
+				"readonly",
+				"ref",
+				"return",
+				"sbyte",
+				"sealed",
+				"set",
+				"short",
+				"sizeof",
+				"stackalloc",
+				"static",
+				"string",
+				"struct",
+				"switch",
+				"this",
+				"throw",
+				"true",
+				"try",
+				"typeof",
+				"uint",
+				"ulong",
+				"unchecked",
+				"unsafe",
+				"ushort",
+				"using",
+				"value",
+				"virtual",
+				"void",
+				"volatile",
+				"while"
+            );
+            AltKeywords = (
+            );
+            PreprocessorKeywordStart = "#";
+            PreprocessorKeywords = ( 
+				"region",
+				"endregion",
+				"if",
+				"else",
+				"endif"
+			);
+        };
+    },
+)

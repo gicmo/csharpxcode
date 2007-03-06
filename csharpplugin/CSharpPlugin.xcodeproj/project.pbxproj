@@ -1,0 +1,492 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		080D3C400A9058BA001F43E1 /* CSharp.pbRTSspec in Resources */ = {isa = PBXBuildFile; fileRef = 080D3C280A9055DC001F43E1 /* CSharp.pbRTSspec */; };
+		081268CF0A93089600F2573C /* Mono.xcspec in Resources */ = {isa = PBXBuildFile; fileRef = 081268CE0A93089600F2573C /* Mono.xcspec */; };
+		0877FEBA0AC65C8F00130E78 /* com.mono.compilers.csharp.gmcs.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0877FEB80AC65C8F00130E78 /* com.mono.compilers.csharp.gmcs.strings */; };
+		08E5C8F30A8721D5005F2097 /* CSharp.pbpackspec in Resources */ = {isa = PBXBuildFile; fileRef = 08E5C8F20A8721D5005F2097 /* CSharp.pbpackspec */; };
+		08F50B090AC4D6C30061C4AD /* MonoOutputParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 08F50B080AC4D6C30061C4AD /* MonoOutputParser.m */; };
+		55F64DE80B5F695B003EC3A4 /* Main.nib in Resources */ = {isa = PBXBuildFile; fileRef = 55F64DD50B5F695A003EC3A4 /* Main.nib */; };
+		55F64DEA0B5F695B003EC3A4 /* TemplateInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 55F64DDA0B5F695B003EC3A4 /* TemplateInfo.plist */; };
+		55F64DEC0B5F695B003EC3A4 /* TemplateInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 55F64DE00B5F695B003EC3A4 /* TemplateInfo.plist */; };
+		55F64DEE0B5F695B003EC3A4 /* TemplateInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 55F64DE60B5F695B003EC3A4 /* TemplateInfo.plist */; };
+		55F64DFB0B5F69A4003EC3A4 /* Cocoa# Exectuable.trgttmpl in Resources */ = {isa = PBXBuildFile; fileRef = 55F64DF80B5F69A4003EC3A4 /* Cocoa# Exectuable.trgttmpl */; };
+		55F64DFC0B5F69A4003EC3A4 /* Executable.trgttmpl in Resources */ = {isa = PBXBuildFile; fileRef = 55F64DF90B5F69A4003EC3A4 /* Executable.trgttmpl */; };
+		55F64DFD0B5F69A4003EC3A4 /* Library.trgttmpl in Resources */ = {isa = PBXBuildFile; fileRef = 55F64DFA0B5F69A4003EC3A4 /* Library.trgttmpl */; };
+		55F64E050B5F69FE003EC3A4 /* TemplateInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 55F64E030B5F69FE003EC3A4 /* TemplateInfo.plist */; };
+		6D3A15940A27A04200FC64F6 /* CSharp.pbbsetspec in Resources */ = {isa = PBXBuildFile; fileRef = 6D3A15930A27A04200FC64F6 /* CSharp.pbbsetspec */; };
+		6D4794B10A068A81009E822B /* DevToolsCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D4794AE0A068A81009E822B /* DevToolsCore.framework */; };
+		6D4794B20A068A81009E822B /* DevToolsSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D4794AF0A068A81009E822B /* DevToolsSupport.framework */; };
+		6D4794B30A068A81009E822B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D4794B00A068A81009E822B /* Cocoa.framework */; };
+		6D4794D00A068C1D009E822B /* XCPBuildSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D4794CA0A068C1D009E822B /* XCPBuildSystem.m */; };
+		6D4794D70A068C83009E822B /* CSharp.pbcompspec in Resources */ = {isa = PBXBuildFile; fileRef = 6D4794D60A068C83009E822B /* CSharp.pbcompspec */; };
+		6D4794D90A068C9B009E822B /* CSharp.pblinkspec in Resources */ = {isa = PBXBuildFile; fileRef = 6D4794D80A068C9B009E822B /* CSharp.pblinkspec */; };
+		6D82139D0A112BCD007F37FB /* MonoLinkerSpecificationCS.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D82139C0A112BCD007F37FB /* MonoLinkerSpecificationCS.m */; };
+		6DD06C370A068D17006A9DC3 /* CSharp.xcbuildrules in Resources */ = {isa = PBXBuildFile; fileRef = 6DD06C360A068D17006A9DC3 /* CSharp.xcbuildrules */; };
+		6DD06C3E0A068E97006A9DC3 /* MonoCompilerSpecificationCS.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD06C3D0A068E97006A9DC3 /* MonoCompilerSpecificationCS.m */; };
+		6DD06C640A068FBE006A9DC3 /* CSharp.pbfilespec in Resources */ = {isa = PBXBuildFile; fileRef = 6DD06C630A068FBE006A9DC3 /* CSharp.pbfilespec */; };
+		6DD06D290A090AA6006A9DC3 /* CSharp.pblangspec in Resources */ = {isa = PBXBuildFile; fileRef = 6DD06D280A090AA6006A9DC3 /* CSharp.pblangspec */; };
+		6DD40F260A115A8A00AB2BFA /* CSharp.pbprodspec in Resources */ = {isa = PBXBuildFile; fileRef = 6DD40F250A115A8A00AB2BFA /* CSharp.pbprodspec */; };
+		6DD40F580A115C0900AB2BFA /* MonoProductSpecificationCS.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD40F570A115C0900AB2BFA /* MonoProductSpecificationCS.m */; settings = {COMPILER_FLAGS = "-fobjc-exceptions"; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		080D3C280A9055DC001F43E1 /* CSharp.pbRTSspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = CSharp.pbRTSspec; path = Resources/CSharp.pbRTSspec; sourceTree = "<group>"; };
+		081268CE0A93089600F2573C /* Mono.xcspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xcspec; name = Mono.xcspec; path = Resources/Mono.xcspec; sourceTree = "<group>"; };
+		0877FEB90AC65C8F00130E78 /* English */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.strings; name = English; path = Resources/English.lproj/com.mono.compilers.csharp.gmcs.strings; sourceTree = "<group>"; };
+		08E5C8F20A8721D5005F2097 /* CSharp.pbpackspec */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = CSharp.pbpackspec; path = Resources/CSharp.pbpackspec; sourceTree = "<group>"; };
+		08F50B070AC4D6940061C4AD /* XCPOutputParsing.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = XCPOutputParsing.h; path = Headers/XCPOutputParsing.h; sourceTree = "<group>"; };
+		08F50B080AC4D6C30061C4AD /* MonoOutputParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MonoOutputParser.m; path = Sources/MonoOutputParser.m; sourceTree = "<group>"; };
+		08F50B0A0AC4D6E30061C4AD /* MonoOutputParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MonoOutputParser.h; path = Sources/MonoOutputParser.h; sourceTree = "<group>"; };
+		55F64DD40B5F695A003EC3A4 /* ApplicationController.cs */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.csharp; path = ApplicationController.cs; sourceTree = "<group>"; };
+		55F64DD50B5F695A003EC3A4 /* Main.nib */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; path = Main.nib; sourceTree = "<group>"; };
+		55F64DD60B5F695A003EC3A4 /* MainFile.cs */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.csharp; path = MainFile.cs; sourceTree = "<group>"; };
+		55F64DD70B5F695A003EC3A4 /* project.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = project.xcodeproj; sourceTree = "<group>"; };
+		55F64DDA0B5F695B003EC3A4 /* TemplateInfo.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.xml; path = TemplateInfo.plist; sourceTree = "<group>"; };
+		55F64DDC0B5F695B003EC3A4 /* MainFile.cs */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.csharp; path = MainFile.cs; sourceTree = "<group>"; };
+		55F64DDD0B5F695B003EC3A4 /* project.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = project.xcodeproj; sourceTree = "<group>"; };
+		55F64DE00B5F695B003EC3A4 /* TemplateInfo.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.xml; path = TemplateInfo.plist; sourceTree = "<group>"; };
+		55F64DE20B5F695B003EC3A4 /* file.cs */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.csharp; path = file.cs; sourceTree = "<group>"; };
+		55F64DE30B5F695B003EC3A4 /* project.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = project.xcodeproj; sourceTree = "<group>"; };
+		55F64DE60B5F695B003EC3A4 /* TemplateInfo.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.xml; path = TemplateInfo.plist; sourceTree = "<group>"; };
+		55F64DF80B5F69A4003EC3A4 /* Cocoa# Exectuable.trgttmpl */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = "Cocoa# Exectuable.trgttmpl"; sourceTree = "<group>"; };
+		55F64DF90B5F69A4003EC3A4 /* Executable.trgttmpl */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = Executable.trgttmpl; sourceTree = "<group>"; };
+		55F64DFA0B5F69A4003EC3A4 /* Library.trgttmpl */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = Library.trgttmpl; sourceTree = "<group>"; };
+		55F64E020B5F69FE003EC3A4 /* file.cs */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.csharp; path = file.cs; sourceTree = "<group>"; };
+		55F64E030B5F69FE003EC3A4 /* TemplateInfo.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.xml; path = TemplateInfo.plist; sourceTree = "<group>"; };
+		6D3A15930A27A04200FC64F6 /* CSharp.pbbsetspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = CSharp.pbbsetspec; path = Resources/CSharp.pbbsetspec; sourceTree = "<group>"; };
+		6D4794AE0A068A81009E822B /* DevToolsCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DevToolsCore.framework; path = /System/Library/PrivateFrameworks/DevToolsCore.framework; sourceTree = "<absolute>"; };
+		6D4794AF0A068A81009E822B /* DevToolsSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DevToolsSupport.framework; path = /System/Library/PrivateFrameworks/DevToolsSupport.framework; sourceTree = "<absolute>"; };
+		6D4794B00A068A81009E822B /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		6D4794C90A068C1D009E822B /* XCPBuildSystem.h */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.h; name = XCPBuildSystem.h; path = Headers/XCPBuildSystem.h; sourceTree = "<group>"; };
+		6D4794CA0A068C1D009E822B /* XCPBuildSystem.m */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.objc; name = XCPBuildSystem.m; path = Headers/XCPBuildSystem.m; sourceTree = "<group>"; };
+		6D4794CB0A068C1D009E822B /* XCPDependencyGraph.h */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.h; name = XCPDependencyGraph.h; path = Headers/XCPDependencyGraph.h; sourceTree = "<group>"; };
+		6D4794CE0A068C1D009E822B /* XCPSpecifications.h */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.h; name = XCPSpecifications.h; path = Headers/XCPSpecifications.h; sourceTree = "<group>"; };
+		6D4794CF0A068C1D009E822B /* XCPSupport.h */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.h; name = XCPSupport.h; path = Headers/XCPSupport.h; sourceTree = "<group>"; };
+		6D4794D30A068C61009E822B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; name = Info.plist; path = Resources/Info.plist; sourceTree = "<group>"; };
+		6D4794D60A068C83009E822B /* CSharp.pbcompspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = CSharp.pbcompspec; path = Resources/CSharp.pbcompspec; sourceTree = "<group>"; };
+		6D4794D80A068C9B009E822B /* CSharp.pblinkspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = CSharp.pblinkspec; path = Resources/CSharp.pblinkspec; sourceTree = "<group>"; };
+		6D82139B0A112BCD007F37FB /* MonoLinkerSpecificationCS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MonoLinkerSpecificationCS.h; path = Sources/MonoLinkerSpecificationCS.h; sourceTree = "<group>"; };
+		6D82139C0A112BCD007F37FB /* MonoLinkerSpecificationCS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MonoLinkerSpecificationCS.m; path = Sources/MonoLinkerSpecificationCS.m; sourceTree = "<group>"; };
+		6DD06C360A068D17006A9DC3 /* CSharp.xcbuildrules */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = CSharp.xcbuildrules; path = Resources/CSharp.xcbuildrules; sourceTree = "<group>"; };
+		6DD06C3C0A068E97006A9DC3 /* MonoCompilerSpecificationCS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MonoCompilerSpecificationCS.h; path = Sources/MonoCompilerSpecificationCS.h; sourceTree = "<group>"; };
+		6DD06C3D0A068E97006A9DC3 /* MonoCompilerSpecificationCS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MonoCompilerSpecificationCS.m; path = Sources/MonoCompilerSpecificationCS.m; sourceTree = "<group>"; };
+		6DD06C630A068FBE006A9DC3 /* CSharp.pbfilespec */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = text.plist.pbfilespec; name = CSharp.pbfilespec; path = Resources/CSharp.pbfilespec; sourceTree = "<group>"; };
+		6DD06D280A090AA6006A9DC3 /* CSharp.pblangspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.pblangspec; name = CSharp.pblangspec; path = Resources/CSharp.pblangspec; sourceTree = "<group>"; };
+		6DD40F250A115A8A00AB2BFA /* CSharp.pbprodspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = CSharp.pbprodspec; path = Resources/CSharp.pbprodspec; sourceTree = "<group>"; };
+		6DD40F560A115C0900AB2BFA /* MonoProductSpecificationCS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MonoProductSpecificationCS.h; path = Sources/MonoProductSpecificationCS.h; sourceTree = "<group>"; };
+		6DD40F570A115C0900AB2BFA /* MonoProductSpecificationCS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MonoProductSpecificationCS.m; path = Sources/MonoProductSpecificationCS.m; sourceTree = "<group>"; };
+		6DEFD19B0A0687DE00DE0570 /* CSharpPlugin.pbplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CSharpPlugin.pbplugin; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6DEFD1990A0687DE00DE0570 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D4794B10A068A81009E822B /* DevToolsCore.framework in Frameworks */,
+				6D4794B20A068A81009E822B /* DevToolsSupport.framework in Frameworks */,
+				6D4794B30A068A81009E822B /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		55F64DCF0B5F690B003EC3A4 /* Project Templates */ = {
+			isa = PBXGroup;
+			children = (
+				55F64DD20B5F695A003EC3A4 /* C Sharp */,
+			);
+			includeInIndex = 1;
+			name = "Project Templates";
+			sourceTree = "<group>";
+		};
+		55F64DD20B5F695A003EC3A4 /* C Sharp */ = {
+			isa = PBXGroup;
+			children = (
+				55F64DD30B5F695A003EC3A4 /* Cocoa# Executable */,
+				55F64DDB0B5F695B003EC3A4 /* Executable */,
+				55F64DE10B5F695B003EC3A4 /* Library */,
+			);
+			name = "C Sharp";
+			path = "Project Templates/C Sharp";
+			sourceTree = "<group>";
+		};
+		55F64DD30B5F695A003EC3A4 /* Cocoa# Executable */ = {
+			isa = PBXGroup;
+			children = (
+				55F64DD40B5F695A003EC3A4 /* ApplicationController.cs */,
+				55F64DD50B5F695A003EC3A4 /* Main.nib */,
+				55F64DD60B5F695A003EC3A4 /* MainFile.cs */,
+				55F64DD70B5F695A003EC3A4 /* project.xcodeproj */,
+				55F64DDA0B5F695B003EC3A4 /* TemplateInfo.plist */,
+			);
+			path = "Cocoa# Executable";
+			sourceTree = "<group>";
+		};
+		55F64DD80B5F695A003EC3A4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		55F64DDB0B5F695B003EC3A4 /* Executable */ = {
+			isa = PBXGroup;
+			children = (
+				55F64DDC0B5F695B003EC3A4 /* MainFile.cs */,
+				55F64DDD0B5F695B003EC3A4 /* project.xcodeproj */,
+				55F64DE00B5F695B003EC3A4 /* TemplateInfo.plist */,
+			);
+			path = Executable;
+			sourceTree = "<group>";
+		};
+		55F64DDE0B5F695B003EC3A4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		55F64DE10B5F695B003EC3A4 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				55F64DE20B5F695B003EC3A4 /* file.cs */,
+				55F64DE30B5F695B003EC3A4 /* project.xcodeproj */,
+				55F64DE60B5F695B003EC3A4 /* TemplateInfo.plist */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		55F64DE40B5F695B003EC3A4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		55F64DF70B5F69A4003EC3A4 /* C Sharp */ = {
+			isa = PBXGroup;
+			children = (
+				55F64DF80B5F69A4003EC3A4 /* Cocoa# Exectuable.trgttmpl */,
+				55F64DF90B5F69A4003EC3A4 /* Executable.trgttmpl */,
+				55F64DFA0B5F69A4003EC3A4 /* Library.trgttmpl */,
+			);
+			name = "C Sharp";
+			path = "Target Templates/C Sharp";
+			sourceTree = "<group>";
+		};
+		55F64E000B5F69E0003EC3A4 /* File Templates */ = {
+			isa = PBXGroup;
+			children = (
+				55F64E010B5F69FE003EC3A4 /* C Sharp.pbfiletemplate */,
+			);
+			name = "File Templates";
+			sourceTree = "<group>";
+		};
+		55F64E010B5F69FE003EC3A4 /* C Sharp.pbfiletemplate */ = {
+			isa = PBXGroup;
+			children = (
+				55F64E020B5F69FE003EC3A4 /* file.cs */,
+				55F64E030B5F69FE003EC3A4 /* TemplateInfo.plist */,
+			);
+			name = "C Sharp.pbfiletemplate";
+			path = "File Templates/C Sharp.pbfiletemplate";
+			sourceTree = "<group>";
+		};
+		55F64E5D0B5F6F3D003EC3A4 /* Plug-ins */ = {
+			isa = PBXGroup;
+			children = (
+				6DEFD19B0A0687DE00DE0570 /* CSharpPlugin.pbplugin */,
+			);
+			name = "Plug-ins";
+			sourceTree = "<group>";
+		};
+		6D4794AC0A068A68009E822B /* Target Templates */ = {
+			isa = PBXGroup;
+			children = (
+				55F64DF70B5F69A4003EC3A4 /* C Sharp */,
+			);
+			name = "Target Templates";
+			sourceTree = "<group>";
+		};
+		6DEFD18B0A0687AF00DE0570 = {
+			isa = PBXGroup;
+			children = (
+				55F64E000B5F69E0003EC3A4 /* File Templates */,
+				55F64DCF0B5F690B003EC3A4 /* Project Templates */,
+				0877FEB80AC65C8F00130E78 /* com.mono.compilers.csharp.gmcs.strings */,
+				6DEFD1BC0A06887E00DE0570 /* Xcode API */,
+				6DEFD1BB0A06887800DE0570 /* Classes */,
+				6DEFD1BD0A06888D00DE0570 /* Resources */,
+				6D4794AC0A068A68009E822B /* Target Templates */,
+				6DEFD1BE0A0688A400DE0570 /* Frameworks and Libraries */,
+				6DEFD19C0A0687DE00DE0570 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6DEFD19C0A0687DE00DE0570 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				55F64E5D0B5F6F3D003EC3A4 /* Plug-ins */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6DEFD1BB0A06887800DE0570 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				08F50B0A0AC4D6E30061C4AD /* MonoOutputParser.h */,
+				08F50B080AC4D6C30061C4AD /* MonoOutputParser.m */,
+				6DD06C3C0A068E97006A9DC3 /* MonoCompilerSpecificationCS.h */,
+				6DD06C3D0A068E97006A9DC3 /* MonoCompilerSpecificationCS.m */,
+				6D82139B0A112BCD007F37FB /* MonoLinkerSpecificationCS.h */,
+				6D82139C0A112BCD007F37FB /* MonoLinkerSpecificationCS.m */,
+				6DD40F560A115C0900AB2BFA /* MonoProductSpecificationCS.h */,
+				6DD40F570A115C0900AB2BFA /* MonoProductSpecificationCS.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		6DEFD1BC0A06887E00DE0570 /* Xcode API */ = {
+			isa = PBXGroup;
+			children = (
+				08F50B070AC4D6940061C4AD /* XCPOutputParsing.h */,
+				6D4794C90A068C1D009E822B /* XCPBuildSystem.h */,
+				6D4794CA0A068C1D009E822B /* XCPBuildSystem.m */,
+				6D4794CB0A068C1D009E822B /* XCPDependencyGraph.h */,
+				6D4794CE0A068C1D009E822B /* XCPSpecifications.h */,
+				6D4794CF0A068C1D009E822B /* XCPSupport.h */,
+			);
+			name = "Xcode API";
+			sourceTree = "<group>";
+		};
+		6DEFD1BD0A06888D00DE0570 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				08E5C8F20A8721D5005F2097 /* CSharp.pbpackspec */,
+				6D4794D30A068C61009E822B /* Info.plist */,
+				6D4794D60A068C83009E822B /* CSharp.pbcompspec */,
+				6DD06C630A068FBE006A9DC3 /* CSharp.pbfilespec */,
+				6D4794D80A068C9B009E822B /* CSharp.pblinkspec */,
+				6DD06C360A068D17006A9DC3 /* CSharp.xcbuildrules */,
+				6DD06D280A090AA6006A9DC3 /* CSharp.pblangspec */,
+				6DD40F250A115A8A00AB2BFA /* CSharp.pbprodspec */,
+				6D3A15930A27A04200FC64F6 /* CSharp.pbbsetspec */,
+				080D3C280A9055DC001F43E1 /* CSharp.pbRTSspec */,
+				081268CE0A93089600F2573C /* Mono.xcspec */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		6DEFD1BE0A0688A400DE0570 /* Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				6D4794AE0A068A81009E822B /* DevToolsCore.framework */,
+				6D4794AF0A068A81009E822B /* DevToolsSupport.framework */,
+				6D4794B00A068A81009E822B /* Cocoa.framework */,
+			);
+			name = "Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6DEFD19A0A0687DE00DE0570 /* CSharpPlugin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6DEFD19E0A0687E000DE0570 /* Build configuration list for PBXNativeTarget "CSharpPlugin" */;
+			buildPhases = (
+				6DEFD1970A0687DE00DE0570 /* Resources */,
+				6DEFD1980A0687DE00DE0570 /* Sources */,
+				6DEFD1990A0687DE00DE0570 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CSharpPlugin;
+			productName = CSharpPlugin;
+			productReference = 6DEFD19B0A0687DE00DE0570 /* CSharpPlugin.pbplugin */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6DEFD18D0A0687AF00DE0570 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 6DEFD18E0A0687AF00DE0570 /* Build configuration list for PBXProject "CSharpPlugin" */;
+			hasScannedForEncodings = 0;
+			mainGroup = 6DEFD18B0A0687AF00DE0570;
+			productRefGroup = 6DEFD19C0A0687DE00DE0570 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 55F64DDE0B5F695B003EC3A4 /* Products */;
+					ProjectRef = 55F64DDD0B5F695B003EC3A4 /* project.xcodeproj */;
+				},
+				{
+					ProductGroup = 55F64DD80B5F695A003EC3A4 /* Products */;
+					ProjectRef = 55F64DD70B5F695A003EC3A4 /* project.xcodeproj */;
+				},
+				{
+					ProductGroup = 55F64DE40B5F695B003EC3A4 /* Products */;
+					ProjectRef = 55F64DE30B5F695B003EC3A4 /* project.xcodeproj */;
+				},
+			);
+			targets = (
+				6DEFD19A0A0687DE00DE0570 /* CSharpPlugin */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6DEFD1970A0687DE00DE0570 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D4794D70A068C83009E822B /* CSharp.pbcompspec in Resources */,
+				6D4794D90A068C9B009E822B /* CSharp.pblinkspec in Resources */,
+				6DD06C370A068D17006A9DC3 /* CSharp.xcbuildrules in Resources */,
+				6DD06C640A068FBE006A9DC3 /* CSharp.pbfilespec in Resources */,
+				6DD06D290A090AA6006A9DC3 /* CSharp.pblangspec in Resources */,
+				6DD40F260A115A8A00AB2BFA /* CSharp.pbprodspec in Resources */,
+				6D3A15940A27A04200FC64F6 /* CSharp.pbbsetspec in Resources */,
+				08E5C8F30A8721D5005F2097 /* CSharp.pbpackspec in Resources */,
+				080D3C400A9058BA001F43E1 /* CSharp.pbRTSspec in Resources */,
+				081268CF0A93089600F2573C /* Mono.xcspec in Resources */,
+				0877FEBA0AC65C8F00130E78 /* com.mono.compilers.csharp.gmcs.strings in Resources */,
+				55F64DE80B5F695B003EC3A4 /* Main.nib in Resources */,
+				55F64DEA0B5F695B003EC3A4 /* TemplateInfo.plist in Resources */,
+				55F64DEC0B5F695B003EC3A4 /* TemplateInfo.plist in Resources */,
+				55F64DEE0B5F695B003EC3A4 /* TemplateInfo.plist in Resources */,
+				55F64DFB0B5F69A4003EC3A4 /* Cocoa# Exectuable.trgttmpl in Resources */,
+				55F64DFC0B5F69A4003EC3A4 /* Executable.trgttmpl in Resources */,
+				55F64DFD0B5F69A4003EC3A4 /* Library.trgttmpl in Resources */,
+				55F64E050B5F69FE003EC3A4 /* TemplateInfo.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6DEFD1980A0687DE00DE0570 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D4794D00A068C1D009E822B /* XCPBuildSystem.m in Sources */,
+				6DD06C3E0A068E97006A9DC3 /* MonoCompilerSpecificationCS.m in Sources */,
+				6D82139D0A112BCD007F37FB /* MonoLinkerSpecificationCS.m in Sources */,
+				6DD40F580A115C0900AB2BFA /* MonoProductSpecificationCS.m in Sources */,
+				08F50B090AC4D6C30061C4AD /* MonoOutputParser.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0877FEB80AC65C8F00130E78 /* com.mono.compilers.csharp.gmcs.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0877FEB90AC65C8F00130E78 /* English */,
+			);
+			name = com.mono.compilers.csharp.gmcs.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6DEFD18F0A0687AF00DE0570 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+			};
+			name = Debug;
+		};
+		6DEFD1900A0687AF00DE0570 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+			};
+			name = Release;
+		};
+		6DEFD19F0A0687E000DE0570 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "\"$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks\"";
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = "XCODE_VERSION=23";
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				GENERATE_PKGINFO_FILE = YES;
+				INFOPLIST_FILE = Resources/Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Application Support/Apple/Plugins/";
+				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				PREBINDING = NO;
+				PRODUCT_NAME = CSharpPlugin;
+				WARNING_CFLAGS = "-Wall";
+				WRAPPER_EXTENSION = pbplugin;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		6DEFD1A00A0687E000DE0570 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks\"";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = "XCODE_VERSION=23";
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				GENERATE_PKGINFO_FILE = YES;
+				INFOPLIST_FILE = Resources/Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Application Support/Apple/Plugins/";
+				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				PREBINDING = NO;
+				PRODUCT_NAME = CSharpPlugin;
+				WARNING_CFLAGS = "-Wall";
+				WRAPPER_EXTENSION = pbplugin;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6DEFD18E0A0687AF00DE0570 /* Build configuration list for PBXProject "CSharpPlugin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DEFD18F0A0687AF00DE0570 /* Debug */,
+				6DEFD1900A0687AF00DE0570 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		6DEFD19E0A0687E000DE0570 /* Build configuration list for PBXNativeTarget "CSharpPlugin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DEFD19F0A0687E000DE0570 /* Debug */,
+				6DEFD1A00A0687E000DE0570 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6DEFD18D0A0687AF00DE0570 /* Project object */;
+}

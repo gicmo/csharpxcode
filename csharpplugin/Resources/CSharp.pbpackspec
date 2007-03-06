@@ -1,0 +1,47 @@
+/*
+	Mono C# Package Specification
+	
+	Based (heavily) on
+	ocaml.pbpackspec - OCamlPlugin
+	Copyright 2005 Damien Bobillot.
+	Distributed under the GPL licence.
+*/
+(
+	// Mono executable assembly
+	{
+		Identifier = com.mono.package-type.executable;
+		Name = "Mono Executable Assembly";
+		Description = "Mono assembly that can be run";
+		DefaultBuildSettings = {
+			PACKAGE_TYPE = EXECUTABLE;
+			EXECUTABLE_SUFFIX = ".exe";
+			EXECUTABLE_NAME = "$(PRODUCT_NAME)$(EXECUTABLE_SUFFIX)";
+			EXECUTABLE_PATH = "$(EXECUTABLE_NAME)";
+			GENERATE_PKGINFO_FILE = NO;
+		};
+		ProductReference = {
+			FileType = compiled.mono.executable;
+			Name = "$(PRODUCT_NAME).exe";   // always assumed to be relative to $(BUILD_DIR)
+			IsLaunchable = YES;
+		};
+	},
+
+	// Mono library assembly
+	{
+		Identifier = com.mono.package-type.library;
+		Name = "Mono library Assembly";
+		Description = "Mono assembly that is to be referenced by aother assembly";
+		DefaultBuildSettings = {
+			PACKAGE_TYPE = EXECUTABLE;
+			EXECUTABLE_SUFFIX = ".dll";
+			EXECUTABLE_NAME = "$(PRODUCT_NAME)$(EXECUTABLE_SUFFIX)";
+			EXECUTABLE_PATH = "$(EXECUTABLE_NAME)";
+			GENERATE_PKGINFO_FILE = NO;
+		};
+		ProductReference = {
+			FileType = compiled.mono.library;
+			Name = "$(PRODUCT_NAME).dll";   // always assumed to be relative to $(BUILD_DIR)
+			IsLaunchable = YES;
+		};
+	}
+)

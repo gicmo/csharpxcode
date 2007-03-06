@@ -1,0 +1,10 @@
+/*
+	Mono Runtime System - CSharp.pbRTSspec
+*/
+(
+	{
+		Identifier ="rts.Mono";
+		Name = "Mono:
+		SpecificResourcePath = "/usr/bin/Mono";
+	}
+)
