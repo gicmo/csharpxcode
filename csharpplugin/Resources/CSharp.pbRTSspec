@@ -4,7 +4,7 @@
 (
 	{
 		Identifier ="rts.Mono";
-		Name = "Mono:
-		SpecificResourcePath = "/usr/bin/Mono";
+		Name = "Mono";
+		SpecificResourcePath = "/usr/bin/mono";
 	}
 )

@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>Description</key>
-	<string>This project builds a mono executable application written in C#.</string>
+	<string>This project builds a Mono library assembly written in C#.</string>
 	<key>FilesToMacroExpand</key>
 	<array>
 		<string>«PROJECTNAMEASIDENTIFIER».cs</string>
@@ -11,7 +11,7 @@
 	</array>
 	<key>FilesToRename</key>
 	<dict>
-		<key>MainFile.cs</key>
+		<key>file.cs</key>
 		<string>«PROJECTNAMEASIDENTIFIER».cs</string>
 	</dict>
 </dict>

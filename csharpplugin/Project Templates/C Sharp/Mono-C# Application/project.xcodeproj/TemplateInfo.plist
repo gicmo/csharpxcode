@@ -3,20 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>Description</key>
-	<string>This project builds a mono/Cocoa# executable application written in C#.</string>
+	<string>This project builds a Mono application written in C#.</string>
 	<key>FilesToMacroExpand</key>
 	<array>
 		<string>«PROJECTNAMEASIDENTIFIER».cs</string>
 		<string>«PROJECTNAME».xcodeproj/default.pbxuser</string>
-		<string>ApplicationController.cs</string>
-		<string>Main.nib</string>
 	</array>
 	<key>FilesToRename</key>
 	<dict>
-		<key>ApplicationControllers.cs</key>
-		<string>ApplicationControllers.cs</string>
-		<key>Main.nib</key>
-		<string>Main.nib</string>
 		<key>MainFile.cs</key>
 		<string>«PROJECTNAMEASIDENTIFIER».cs</string>
 	</dict>
