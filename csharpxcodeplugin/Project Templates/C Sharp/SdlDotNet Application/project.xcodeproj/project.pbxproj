@@ -1,0 +1,161 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		08D1CF970A94344F003EF5EB /* «PROJECTNAMEASIDENTIFIER».cs in Sources */ = {isa = PBXBuildFile; fileRef = 08D1CF960A94344F003EF5EB /* «PROJECTNAMEASIDENTIFIER».cs */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		08D1CF8F0A943432003EF5EB /* «PROJECTNAMEASIDENTIFIER» */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = compiled.mono.executable; name = «PROJECTNAMEASIDENTIFIER»; path = build/Debug/«PROJECTNAMEASIDENTIFIER»; sourceTree = "<group>"; };
+		08D1CF960A94344F003EF5EB /* «PROJECTNAMEASIDENTIFIER».cs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.csharp; path = «PROJECTNAMEASIDENTIFIER».cs; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		08D1CF8D0A943432003EF5EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08D1CF7C0A94341D003EF5EB = {
+			isa = PBXGroup;
+			children = (
+				08D1CF950A94343C003EF5EB /* Sources */,
+				08D1CF900A943432003EF5EB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		08D1CF900A943432003EF5EB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				08D1CF8F0A943432003EF5EB /* «PROJECTNAMEASIDENTIFIER» */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		08D1CF950A94343C003EF5EB /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				08D1CF960A94344F003EF5EB /* «PROJECTNAMEASIDENTIFIER».cs */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		08D1CF8E0A943432003EF5EB /* «PROJECTNAMEASIDENTIFIER» */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08D1CF920A943433003EF5EB /* Build configuration list for PBXNativeTarget "«PROJECTNAMEASIDENTIFIER»" */;
+			buildPhases = (
+				08D1CF8C0A943432003EF5EB /* Sources */,
+				08D1CF8D0A943432003EF5EB /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = «PROJECTNAMEASIDENTIFIER»;
+			productName = «PROJECTNAMEASIDENTIFIER»;
+			productReference = 08D1CF8F0A943432003EF5EB /* «PROJECTNAMEASIDENTIFIER» */;
+			productType = "com.mono.product-type.executable";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08D1CF7E0A94341D003EF5EB /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 08D1CF7F0A94341D003EF5EB /* Build configuration list for PBXProject "«PROJECTNAME»" */;
+			hasScannedForEncodings = 0;
+			mainGroup = 08D1CF7C0A94341D003EF5EB;
+			productRefGroup = 08D1CF900A943432003EF5EB /* Products */;
+			projectDirPath = "";
+			targets = (
+				08D1CF8E0A943432003EF5EB /* «PROJECTNAMEASIDENTIFIER» */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		08D1CF8C0A943432003EF5EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08D1CF970A94344F003EF5EB /* «PROJECTNAMEASIDENTIFIER».cs in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		08D1CF800A94341D003EF5EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+		08D1CF810A94341D003EF5EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+			};
+			name = Release;
+		};
+		08D1CF930A943433003EF5EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				EXECUTABLE_EXTENSION = .exe;
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = «PROJECTNAMEASIDENTIFIER»;
+				TARGET_TYPE = "-target:exe";
+			};
+			name = Debug;
+		};
+		08D1CF940A943433003EF5EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				EXECUTABLE_EXTENSION = .exe;
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = «PROJECTNAMEASIDENTIFIER»;
+				TARGET_TYPE = "-target:exe";
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		08D1CF7F0A94341D003EF5EB /* Build configuration list for PBXProject "«PROJECTNAME»" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08D1CF800A94341D003EF5EB /* Debug */,
+				08D1CF810A94341D003EF5EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		08D1CF920A943433003EF5EB /* Build configuration list for PBXNativeTarget "«PROJECTNAMEASIDENTIFIER»" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08D1CF930A943433003EF5EB /* Debug */,
+				08D1CF940A943433003EF5EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 08D1CF7E0A94341D003EF5EB /* Project object */;
+}

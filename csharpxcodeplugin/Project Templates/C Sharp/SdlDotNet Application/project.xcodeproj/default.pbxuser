@@ -1,0 +1,136 @@
+// !$*UTF8*$!
+{
+	08D1CF7E0A94341D003EF5EB /* Project object */ = {
+		activeBuildConfigurationName = Release;
+		activeExecutable = 08DDBDB30AC25B68009DA930 /* «PROJECTNAMEASIDENTIFIER» */;
+		activeTarget = 08D1CF8E0A943432003EF5EB /* «PROJECTNAMEASIDENTIFIER» */;
+		breakpointsGroup = 08DDBDC00AC25B8B009DA930 /* XCBreakpointsBucket */;
+		codeSenseManager = 08DDBDBF0AC25B8B009DA930 /* Code sense */;
+		executables = (
+			08DDBDB30AC25B68009DA930 /* «PROJECTNAMEASIDENTIFIER» */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXErrorsWarningsDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXErrorsWarningsDataSource_LocationID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					300,
+					133,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXErrorsWarningsDataSource_TypeID,
+					PBXErrorsWarningsDataSource_MessageID,
+					PBXErrorsWarningsDataSource_LocationID,
+				);
+			};
+			PBXConfiguration.PBXFileTableDataSource3.PBXExecutablesDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXExecutablesDataSource_NameID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					22,
+					300,
+					131,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXExecutablesDataSource_ActiveFlagID,
+					PBXExecutablesDataSource_NameID,
+					PBXExecutablesDataSource_CommentsID,
+				);
+			};
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					243,
+					20,
+					48.1626,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 180509544;
+			PBXWorkspaceStateSaveDate = 180509544;
+		};
+		sourceControlManager = 08DDBDBE0AC25B8B009DA930 /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	08D1CF8E0A943432003EF5EB /* «PROJECTNAMEASIDENTIFIER» */ = {
+		activeExec = 0;
+		executables = (
+			08DDBDB30AC25B68009DA930 /* «PROJECTNAMEASIDENTIFIER» */,
+		);
+	};
+	08D1CF960A94344F003EF5EB /* CSTrial.cs */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {763, 487}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRect = "{{0, 0}, {763, 487}}";
+			sepNavWindowFrame = "{{15, 257}, {808, 616}}";
+		};
+	};
+	08DDBDB30AC25B68009DA930 /* «PROJECTNAMEASIDENTIFIER» */ = {
+		isa = PBXExecutable;
+		activeArgIndex = 0;
+		activeArgIndices = (
+			YES,
+		);
+		argumentStrings = (
+			"«PROJECTNAMEASIDENTIFIER».exe",
+		);
+		autoAttachOnCrash = 1;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		launchableReference = 130F8B99001BDF0A11CA292A; /* Mono */
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = «PROJECTNAMEASIDENTIFIER»;
+		isa = PBXExecutable;
+		sourceDirectories = (
+		);
+	};
+	08DDBDBE0AC25B8B009DA930 /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+		};
+		scmType = "";
+	};
+	08DDBDBF0AC25B8B009DA930 /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	08DDBDC00AC25B8B009DA930 /* XCBreakpointsBucket */ = {
+		isa = XCBreakpointsBucket;
+		name = "Project Breakpoints";
+		objects = (
+		);
+	};
+	130F8B99001BDF0A11CA292A = {
+		isa = PBXExecutableFileReference;
+		name = Mono;
+		path = /usr/bin/Mono;
+		refType = 0;
+	};
+}
