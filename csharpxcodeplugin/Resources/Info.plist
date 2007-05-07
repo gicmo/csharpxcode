@@ -5,15 +5,15 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>English</string>
 	<key>CFBundleExecutable</key>
-	<string>CSharpPlugin</string>
+	<string>CSharpXcodePlugin</string>
 	<key>CFBundleIconFile</key>
-	<string>csharpplugin</string>
+	<string>CSharpXcodePlugin</string>
 	<key>CFBundleIdentifier</key>
 	<string>com.mono.Xcode.CSharpPlugin</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
-	<string>CSharpPlugin</string>
+	<string>CSharpXcodePlugin</string>
 	<key>CFBundlePackageType</key>
 	<string>BNDL</string>
 	<key>CFBundleSignature</key>
