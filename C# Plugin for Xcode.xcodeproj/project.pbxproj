@@ -211,7 +211,7 @@
 /* Begin PBXProject section */
 		6DEFD18D0A0687AF00DE0570 /* Project object */ = {
 			isa = PBXProject;
-			buildConfigurationList = 6DEFD18E0A0687AF00DE0570 /* Build configuration list for PBXProject "CSharpXcodePlugin" */;
+			buildConfigurationList = 6DEFD18E0A0687AF00DE0570 /* Build configuration list for PBXProject "C# Plugin for Xcode" */;
 			compatibilityVersion = "Xcode 3.1";
 			hasScannedForEncodings = 0;
 			mainGroup = 6DEFD18B0A0687AF00DE0570;
@@ -374,7 +374,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6DEFD18E0A0687AF00DE0570 /* Build configuration list for PBXProject "CSharpXcodePlugin" */ = {
+		6DEFD18E0A0687AF00DE0570 /* Build configuration list for PBXProject "C# Plugin for Xcode" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6DEFD18F0A0687AF00DE0570 /* Debug */,
