@@ -85,7 +85,7 @@ path extensions: .pbsomethingspec...) */
 #endif
 
 // Others (you don't need them)
-+ (void)registerSpecificationTypeBaseClass:(Class)class;
++ (void)registerSpecificationTypeBaseClass:(Class)aClass;
 + (void)registerSpecificationOrProxy:(id)spec;
 + (id)registerSpecificationProxyFromPropertyList:(id)plist;
 + (id)registerSpecificationProxiesFromPropertyListsInDirectory:(id)fp8 recursively:(BOOL)fp12 inBundle:(id)fp16;
@@ -225,6 +225,10 @@ path extensions: .pbsomethingspec...) */
 - (id)builtinBracketSearchPathsInBuildContext:(id)fp8 forLanguageDialect:(id)fp12;
 - (id)builtinFrameworkSearchPathsInBuildContext:(id)fp8 forLanguageDialect:(id)fp12;
 - (id)builtinMacroDefinitionsInBuildContext:(id)fp8 forLanguageDialect:(id)fp12;
+@end
+
+@interface XCCompilerSpecification (BDExtensions)
+- (NSArray*)importedFilesForPath:(NSString*)path ensureFilesExist:(BOOL)ensure inTargetBuildContext:(PBXTargetBuildContext*)context;
 @end
 
 /*

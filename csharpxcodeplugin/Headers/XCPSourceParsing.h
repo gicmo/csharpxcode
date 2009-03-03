@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+@class PBXSourceTokens, XCAttributeRun;
+
 @interface PBXLexicalRules : NSObject
 {
 	NSMutableCharacterSet*	_commentStartChars;

@@ -8,6 +8,8 @@
 
 @class XCDependencyNode;
 @class XCDependencyCommand;
+@class PBXFileType;
+@class XCCompilerSpecification;
 
 /*
 	Generic build context
@@ -193,6 +195,7 @@
 
 @interface PBXTargetBuildContext (BDExtensions)
 - (NSArray*)linkedLibraryPaths;
++ (void)activateImportedFileType:(PBXFileType*)type withCompiler:(XCCompilerSpecification*)spec;
 @end
 
 /*

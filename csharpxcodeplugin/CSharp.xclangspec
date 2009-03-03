@@ -1,0 +1,151 @@
+// C# language specification fox Xcode 3
+// Copyright (C) 2009  Christian Kellner
+// based on chsarp.pblangspec
+
+(
+    // MARK: C# Entry Point
+	{
+		Identifier = "xcode.lang.csharp";
+		Description = "C# Coloring";
+		BasedOn = "xcode.lang.simpleColoring";
+		IncludeInMenu = YES;
+		Name = "C#";
+		Syntax = {
+			Tokenizer = "xcode.lang.csharp.lexer";
+			IncludeRules = (
+				"xcode.lang.csharp.using",
+				//"xcode.lang.csharp.struct",
+				//"xcode.lang.csharp.class",
+				//"xcode.lang.csharp.interface",
+				"xcode.lang.csharp.bracketexpr",
+				"xcode.lang.csharp.parenexpr",
+			);
+			Type = "xcode.syntax.plain";
+		};
+	},
+    
+    // MARK: Lexer
+    {
+		Identifier = "xcode.lang.csharp.lexer";
+		Syntax = {
+			IncludeRules = (
+				// Comments
+				"xcode.lang.comment",
+				"xcode.lang.comment.singleline",
+				// Strings and character literals
+				"xcode.lang.csharp.string.wysiwyg",
+				"xcode.lang.string",
+				"xcode.lang.character",
+				// Other
+				"xcode.lang.completionplaceholder",
+				"xcode.lang.csharp.identifier",
+				"xcode.lang.csharp.number",
+			);
+		};
+	},
+    {
+		Identifier = "xcode.lang.csharp.using";
+		Syntax = {
+			Tokenizer = "xcode.lang.csharp.lexer";
+			Rules = (
+				"using",
+				"xcode.lang.string",
+				";",
+			);
+		};
+	},
+    {
+    	Identifier = "xcode.lang.csharp.identifier";
+		Syntax = {
+            StartChars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_";
+            Chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789_";
+			Words = (
+                "abstract", "as",
+                "base", "bool", "break", "byte",
+                "case", "catch", "char", "checked", "class", "const", "continue",
+                "decimal", "default", "delegate", "do", "double",
+                "else", "enum", "event", "explicit", "extern",
+                "false", "finally", "fixed", "float", "for", "foreach",
+                "goto",
+                "if", "implicit", "in", "int", "interface", "internal", "is",
+                "lock", "long",
+                "namespace", "new", "null",
+                "object", "operator", "out", "override",
+                "params", "private", "protected", "public",
+                "readonly", "ref", "return",
+                "sbyte", "sealed", "short", "sizeof", "stackalloc",
+                "static", "string", "struct", "switch",
+                "this",
+                "throw", "true", "try", "typeof",
+                "uint", "ulong", "unchecked", "unsafe", "ushort", "using",
+                "var", "virtual", "void", "volatile",
+                "while",
+                
+                "add", "alias",
+                "get", "global",
+                "partial",
+                "remove",
+                "set",
+                "value",
+                "where",
+                "yield"
+                
+            );
+            Type = "xcode.syntax.keyword";
+            AltType = "xcode.syntax.identifier";
+        };
+    },
+    {
+        Identifier = "xcode.lang.csharp.number";
+        Syntax = {
+            //          SourceScannerClassName = "XCNumberScanner";  
+            StartChars = "0123456789.";
+            // look at all alpha chars so that we don't recognize "9Z" as two tokens
+            Chars = "0123456789+-.abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_";
+            Match = (
+                // integers:
+                "^[1-9][0-9_]*([Uu][Ll]?|[Ll][Uu]?)?$", // dec
+                "^0[0-7_]([Uu][Ll]?|[Ll][Uu]?)?$", // oct
+                "^0[xX][0-9a-fA-F_]+([Uu][Ll]?|[Ll][Uu]?)?$", // hex
+                "^0[bB][01_]+([Uu][Ll]?|[Ll][Uu]?)?$", // bin
+                // floats:
+                "^[0-9_]+((\\.[0-9_]*)?([eE][+-]?[0-9_]+)?)?([lL]|[fF])?i?$",
+                "^[0-9_]*\\.[0-9_]+([eE][+-]?[0-9_]+)?([lL]|[fF])?i?$",
+                "^0[xX][0-9a-fA-F_]+((\\.[0-9a-fA-F_]*)?([pP][+-]?[0-9_]+)?)?([lL]|[fF])?i?$", // hex
+                "^0[xX][0-9a-fA-F_]*\\.[0-9a-fA-F_]+([pP][+-]?[0-9_]+)?([lL]|[fF])?i?$" // hex
+            );
+        };
+    },
+    {
+        Identifier = "xcode.lang.csharp.string.wysiwyg";
+        Syntax = {
+            Start = "@\"";
+            End = "\"";
+            Type = "xcode.syntax.string";
+        };
+    },
+    {
+		Identifier = "xcode.lang.csharp.parenexpr";
+		Syntax = {
+			Tokenizer = "xcode.lang.csharp.lexer";
+			Start = "(";
+			End = ")";
+			Recursive = YES;
+			IncludeRules = (
+				"xcode.lang.chsarp.bracketexpr",
+			);
+		};
+	},
+	{
+		Identifier = "xcode.lang.csharp.bracketexpr";
+		Syntax = {
+			Tokenizer = "xcode.lang.csharp.lexer";
+			Start = "[";
+			End = "]";
+			Recursive = YES;
+			IncludeRules = (
+				"xcode.lang.chsharp.parenexpr",
+			);
+		};
+	}
+)

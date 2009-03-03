@@ -12,6 +12,7 @@
 		ComputerLanguage = csharp;
 		IsTextFile = YES;
 		IsSourceCode = YES;
+        Language = xcode.lang.csharp;
 		AppliesToBuildRules = YES;
 		ChangesCauseDependencyGraphInvalidation = YES;
 	},
