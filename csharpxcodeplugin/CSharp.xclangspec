@@ -30,6 +30,8 @@
 		Syntax = {
 			Tokenizer = "xcode.lang.csharp.lexer";
 			IncludeRules = (
+                // Preproc
+                "xcode.lang.csharp.preprocessor",
 				"xcode.lang.csharp.using",
 				//"xcode.lang.csharp.struct",
 				//"xcode.lang.csharp.class",
@@ -40,12 +42,13 @@
 			Type = "xcode.syntax.plain";
 		};
 	},
-    
+
     // MARK: Lexer
     {
 		Identifier = "xcode.lang.csharp.lexer";
 		Syntax = {
 			IncludeRules = (
+                
 				// Comments
 				"xcode.lang.comment",
 				"xcode.lang.comment.singleline",
@@ -60,6 +63,47 @@
 			);
 		};
 	},
+    
+    {
+        Identifier = "xcode.lang.csharp.lexer.preprocessor";
+        Syntax = {
+            IncludeRules = (
+
+                // Comments
+                "xcode.lang.comment",
+                "xcode.lang.comment.singleline",
+                // Strings and character literals
+                "xcode.lang.string",
+                "xcode.lang.character",
+                // Other
+                "xcode.lang.completionplaceholder",
+                "xcode.lang.csharp.preprocessor.directives",
+                "xcode.lang.number",
+            );
+        };
+    },
+    //MARK: Preprocesor
+
+    {
+        Identifier = "xcode.lang.csharp.preprocessor";
+        Syntax = {
+            Tokenizer = "xcode.lang.csharp.lexer.preprocessor";
+            Start = "#";
+            End = "\n";
+            Type = "xcode.syntax.preprocessor";
+        };
+    },
+
+    {
+        Identifier = "xcode.lang.csharp.preprocessor.directives";
+        Syntax = {
+            Words = (
+                "if", "else", "elif", "endif", "define", "warning", "error",
+                "line", "region", "endregion", "pragma", "checksum",
+            );
+            Type = "xcode.syntax.preprocessor";
+        };
+    },
     {
 		Identifier = "xcode.lang.csharp.using";
 		Syntax = {
